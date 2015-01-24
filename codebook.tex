@@ -1,0 +1,275 @@
+\documentclass[a4paper,10pt]{report}
+\usepackage[utf8]{inputenc}
+
+% Title Page
+
+\begin{document}
+
+\begin{center}
+  \textbf*{CODE BOOK} 
+\end{center}
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+\subsection*{subjectID}
+
+Unique identifier for each of the volunteers.
+
+1..30
+
+\subsection*{activityID}
+
+Unique identifier for the activity the subject was doing when the measurement was taken.
+
+   1 .WALKING
+
+   2 .WALKING\_UPSTAIRS
+
+   3 .WALKING\_DOWNSTAIRS
+
+   4 .SITTING
+
+   5 .STANDING
+
+   6 .LAYING
+
+\subsection*{activityName} 
+
+Name of the activity the activity the subject was doing when the measurement was taken.
+
+ WALKING
+
+ WALKING\_UPSTAIRS
+
+ WALKING\_DOWNSTAIRS
+
+ SITTING
+
+ STANDING
+
+ LAYING
+
+\subsection*{time-BodyAccelerometer-mean-X\\time-BodyAccelerometer-mean-Y\\time-BodyAccelerometer-mean-Z} 
+
+Mean value for the body linear acceleration for the X, Y or Z axis in the time domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{time-BodyAccelerometer-std-X\\time-BodyAccelerometer-std-Y\\time-BodyAccelerometer-std-Z} 
+
+Standard deviation value for the body linear acceleration for the X, Y or Z axis in the time domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{time-Gravity-Accelerometer-mean-X\\time-Gravity-Accelerometer-mean-Y\\time-Gravity-Accelerometer-mean-Z} 
+
+Mean value for the gravity linear acceleration for the X, Y or Z axis in the time domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{time-Gravity-Accelerometer-std-X\\time-Gravity-Accelerometer-std-Y\\time-Gravity-Accelerometer-std-Z} 
+
+Standard deviation value for the gravity linear acceleration for the X, Y or Z axis in the time domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{time-BodyAccelerometerJerk-mean-X\\time-BodyAccelerometerJerk-mean-Y\\time-BodyAccelerometerJerk-mean-Z} 
+
+Mean value for the body linear acceleration jerk for the X, Y or Z axis in the time domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{time-BodyAccelerometerJerk-std-X\\time-BodyAccelerometerJerk-std-Y\\time-BodyAccelerometerJerk-std-Z} 
+
+Standard deviation value for the body linear acceleration jerk for the X, Y or Z axis in the time domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{time-BodyGyroscope-mean-X\\time-BodyGyroscope-mean-Y\\time-BodyGyroscope-mean-Z} 
+
+Mean value for the body angular velocity for the X, Y or Z axis in the time domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{time-BodyGyroscope-std-X\\time-BodyGyroscope-std-Y\\time-BodyGyroscope-std-Z} 
+
+Standard deviation value for the body angular velocity for the X, Y or Z axis in the time domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{time-BodyGyroscopeJerk-mean-X\\time-BodyGyroscopeJerk-mean-Y\\time-BodyGyroscopeJerk-mean-Z} 
+
+Mean value for the body angular velocity jerk for the X, Y or Z axis in the time domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{time-BodyGyroscopeJerk-std-X\\time-BodyGyroscopeJerk-std-Y\\time-BodyGyroscopeJerk-std-Z} 
+
+Standard deviation value for the body angular velocity jerk for the X, Y or Z axis in the time domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{time-BodyAccelerometerMagnitude-mean} 
+
+Mean value for the body linear acceleration magnitude using the euclidean norm in the time domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{time-BodyAccelerometerMagnitude-std} 
+
+Standard deviation value for the body linear acceleration magnitude using the euclidean norm in the time domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{time-GravityAccelerometerMagnitude-mean} 
+
+Mean value for the gravity linear acceleration magnitude using the euclidean norm in the time domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{time-GravityAccelerometerMagnitude-std} 
+
+Standard deviation value for the gravity linear acceleration magnitude using the euclidean norm in the time domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{time-BodyAccelerometerJerkMagnitude-mean} 
+
+Mean value for the body linear acceleration jerk magnitude using the euclidean norm in the time domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{time-BodyAccelerometerJerkMagnitude-std} 
+
+Standard deviation value for the body linear acceleration jerk magnitude using the euclidean norm in the time domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{time-BodyGyroscopeMagnitude-mean} 
+
+Mean value for the body angular velocity magnitude using the euclidean norm in the time domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{time-BodyGyroscopeMagnitude-std} 
+
+Standard deviation value for the body angular velocity magnitude using the euclidean norm in the time domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{time-BodyGyroscopeJerkMagnitude-mean} 
+
+Mean value for the body angular velocity jerk magnitude using the euclidean norm in the time domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{time-BodyGyroscopeJerkMagnitude-std} 
+
+Standard deviation value for the body angular velocity jerk magnitude using the euclidean norm in the time domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{frequency-BodyAccelerometer-mean-X\\frequency-BodyAccelerometer-mean-Y\\frequency-BodyAccelerometer-mean-Z} 
+
+Mean value for the body linear acceleration for the X, Y or Z axis in the frequency domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{frequency-BodyAccelerometer-std-X\\frequency-BodyAccelerometer-std-Y\\frequency-BodyAccelerometer-std-Z} 
+
+Standard deviation value for the body linear acceleration for the X, Y or Z axis in the frequency domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{frequency-BodyAccelerometerJerk-mean-X\\frequency-BodyAccelerometerJerk-mean-Y\\frequency-BodyAccelerometerJerk-mean-Z} 
+
+Mean value for the body linear acceleration jerk for the X, Y or Z axis in the frequency domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{frequency-BodyAccelerometerJerk-std-X\\frequency-BodyAccelerometerJerk-std-Y\\frequency-BodyAccelerometerJerk-std-Z} 
+
+Standard deviation value for the body linear acceleration jerk for the X, Y or Z axis in the frequency domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{frequency-BodyGyroscope-mean-X\\frequency-BodyGyroscope-mean-Y\\frequency-BodyGyroscope-mean-Z} 
+
+Mean value for the body angular velocity for the X, Y or Z axis in the frequency domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{frequency-BodyGyroscope-std-X\\frequency-BodyGyroscope-std-Y\\frequency-BodyGyroscope-std-Z} 
+
+Standard deviation value for the body angular velocity for the X, Y or Z axis in the frequency domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{frequency-BodyGyroscopeJerk-mean-X\\frequency-BodyGyroscopeJerk-mean-Y\\frequency-BodyGyroscopeJerk-mean-Z} 
+
+Mean value for the body angular velocity jerk for the X, Y or Z axis in the frequency domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{frequency-BodyGyroscopeJerk-std-X\\frequency-BodyGyroscopeJerk-std-Y\\frequency-BodyGyroscopeJerk-std-Z} 
+
+Standard deviation value for the body angular velocity jerk for the X, Y or Z axis in the frequency domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{frequency-BodyAccelerometerMagnitude-mean} 
+
+Mean value for the body linear acceleration magnitude using the euclidean norm in the frequency domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{frequency-BodyAccelerometerMagnitude-std} 
+
+Standard deviation value for the body linear acceleration magnitude using the euclidean norm in the frequency domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{frequency-BodyAccelerometerJerkMagnitude-mean} 
+
+Mean value for the body linear acceleration jerk magnitude using the euclidean norm in the frequency domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{frequency-BodyAccelerometerJerkMagnitude-std} 
+
+Standard deviation value for the body linear acceleration jerk magnitude using the euclidean norm in the frequency domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{frequency-BodyGyroscopeMagnitude-mean} 
+
+Mean value for the body angular velocity magnitude using the euclidean norm in the frequency domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{frequency-BodyGyroscopeMagnitude-std} 
+
+Standard deviation value for the body angular velocity magnitude using the euclidean norm in the frequency domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{frequency-BodyGyroscopeJerkMagnitude-mean} 
+
+Mean value for the body angular velocity jerk magnitude using the euclidean norm in the frequency domain.
+
+Numeric value. Possibly negative.
+
+\subsection*{frequency-BodyGyroscopeJerkMagnitude-std} 
+
+Standard deviation value for the body angular velocity jerk magnitude using the euclidean norm in the frequency domain.
+
+Numeric value. Possibly negative.
+
+
+\end{document}  
