@@ -1,6 +1,6 @@
-## Getting and Cleaning Data Course Project
+# Getting and Cleaning Data Course Project
 
-# DataSet Information
+## DataSet Information
 
 (from: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
@@ -8,11 +8,12 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. 
 
-# README.md
+## README.md
 This file.
 
-# run_analysis.R
+## run_analysis.R
 This file downloads, extracts and reads the dataset files in order to create a tidy dataset. The steps are:
+
     1.- Download and extract the Dataset in the directory ./Dataset . This step is only performed if the directory or if the Dataset.zip  do not exist.
 
     2.- Read the dataset files: test, train, features and activities.
@@ -30,11 +31,11 @@ This file downloads, extracts and reads the dataset files in order to create a t
     7.- Writes the dataset to the "tidy_data.txt" file.
 
 
-# codebook.{txt,pdf,md}
+## codebook.{txt,pdf,md}
 The code book file, that includes the necessary information about the features considered. Uses much information found in the original Dataset files.
 
-# codebook.tex
+## codebook.tex
 The LaTeX file used to create the codebook.pdf file.
 
-# tidy_data.txt
+## tidy_data.txt
 The result file written by run_analysis.txt
