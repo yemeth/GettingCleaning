@@ -14,13 +14,21 @@ This file.
 # run_analysis.R
 This file downloads, extracts and reads the dataset files in order to create a tidy dataset. The steps are:
     1.- Download and extract the Dataset in the directory ./Dataset . This step is only performed if the directory or if the Dataset.zip  do not exist.
+
     2.- Read the dataset files: test, train, features and activities.
+
     3.- Searches for the columns related to the desired mean and standard deviation measures. Ignores the rest of the features.
+
         3.1- meanFreq measures are also ignored. An alternative line that includes this measures is included, but commented.
+
     4.- Renames the columns to make them a little bit more verbose (t -> time, f -> frequency, and so on).
+
     5.- Merges all the files into a sinlge variable, including activity names.
+
     6.- Calculates the mean of each measure for each different pair (subjectID,activityID).
+
     7.- Writes the dataset to the "tidy_data.txt" file.
+
 
 # codebook.{txt,pdf,md}
 The code book file, that includes the necessary information about the features considered. Uses much information found in the original Dataset files.
